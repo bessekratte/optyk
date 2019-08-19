@@ -1,202 +1,293 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="../static/css/style.css">
-    </head>
-    <body>
-        <div id="main_div">
-            <nav class="navbar">
-                <a class="active" href="#">Home</a>
-                <a href="#">Search</a>
-                <a href="#">Login</a>
-            </nav>
-            <div id="content">
-                <form id="formularz">
-                    Data przyjęcia: <input class="input" type="text" name="data_przyjecia" value="">
-                        PESEL: <input class="input" type="text" name="PESEL" value="">
-                        <br/>
-                        Imie: <input class="input" type="text" name="Imie" value="">
-                        Nazwisko: <input class="input" type="text" name="Nazwisko" value="">
-                        <br/>
-                        Miasto: <input class="input" type="text" name="Nazwisko" value="">
-                        Kod pocztowy: <input class="input" type="text" name="Nazwisko" value="">
-                        Ulica: <input class="input" type="text" name="Nazwisko" value="">
-                        Nr. domu: <input class="input" type="text" name="Nazwisko" value="">
-                        Nr. mieszkania: <input class="input" type="text" name="Nazwisko" value="">
-                    <br/>
-                    <fieldset>
-                            <legend>Szkła</legend>
-                            <fieldset>
-                                <legend>Do bliży</legend>
-                                <table>
-                                    <thead>
-                                        <td>
-                                            Sfera
-                                        </td>
-                                        <td>
-                                            Cylinder
-                                        </td>
-                                        <td>
-                                            Oś
-                                        </td>
-                                        <td>
-                                            PD
-                                        </td>
-                                        <td colspan="2">
-                                            Jakie rzeczywiście zrobiono
-                                        </td>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <span style="color:white">L</span>
-                                                <input class="input" type="text"
-                                                    name="Nazwisko" value="">
-                                            </td>
-                                            <td>
-                                                <input class="input" type="text"
-                                                    name="Nazwisko" value="">
-                                            </td>
-                                            <td>
-                                                <input class="input" type="text"
-                                                    name="Nazwisko" value="">
-                                            </td>
-                                            <td>
-                                            </td>
-                                            <td>
-                                                <input class="input" type="text"
-                                                    name="Nazwisko" value="">
-                                            </td>
-                                            <td>
-                                                <input class="input" type="text"
-                                                    name="Nazwisko" value="">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <span style="color:white">P</span>
-                                                <input class="input" type="text"
-                                                    name="Nazwisko" value="">
-                                            </td>
-                                            <td>
-                                                <input class="input" type="text"
-                                                    name="Nazwisko" value="">
-                                            </td>
-                                            <td>
-                                                <input class="input" type="text"
-                                                    name="Nazwisko" value="">
-                                            </td>
-                                            <td>
-                                                <input class="input" type="text"
-                                                    name="Nazwisko" value="">
-                                            </td>
-                                            <td>
-                                                <input class="input" type="text"
-                                                    name="Nazwisko" value="">
-                                            </td>
-                                            <td>
-                                                <input class="input" type="text"
-                                                    name="Nazwisko" value="">
-                                            </td>
-                                        </tr>
-                                    </tbody>
 
-                                </table>
-                            </fieldset>
-                            <fieldset>
-                                <legend>Do czytania</legend>
-                                <table>
-                                    <thead>
-                                        <td>
-                                            Sfera
-                                        </td>
-                                        <td>
-                                            Cylinder
-                                        </td>
-                                        <td>
-                                            Oś
-                                        </td>
-                                        <td>
-                                            PD
-                                        </td>
-                                        <td colspan="2">
-                                            Jakie rzeczywiście zrobiono
-                                        </td>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <span style="color:white">L</span>
-                                                <input class="input" type="text"
-                                                    name="Nazwisko" value="">
-                                            </td>
-                                            <td>
-                                                <input class="input" type="text"
-                                                    name="Nazwisko" value="">
-                                            </td>
-                                            <td>
-                                                <input class="input" type="text"
-                                                    name="Nazwisko" value="">
-                                            </td>
-                                            <td>
-                                            </td>
-                                            <td>
-                                                <input class="input" type="text"
-                                                    name="Nazwisko" value="">
-                                            </td>
-                                            <td>
-                                                <input class="input" type="text"
-                                                    name="Nazwisko" value="">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <span style="color:white">P</span>
-                                                <input class="input" type="text"
-                                                    name="Nazwisko" value="">
-                                            </td>
-                                            <td>
-                                                <input class="input" type="text"
-                                                    name="Nazwisko" value="">
-                                            </td>
-                                            <td>
-                                                <input class="input" type="text"
-                                                    name="Nazwisko" value="">
-                                            </td>
-                                            <td>
-                                                <input class="input" type="text"
-                                                    name="Nazwisko" value="">
-                                            </td>
-                                            <td>
-                                                <input class="input" type="text"
-                                                    name="Nazwisko" value="">
-                                            </td>
-                                            <td>
-                                                <input class="input" type="text"
-                                                    name="Nazwisko" value="">
-                                            </td>
-                                        </tr>
-                                    </tbody>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
 
-                                </table>
-                            </fieldset>
+<body>
+    <div id="main_div">
+        <form id="formularz">
+            <br />
 
-                            <!-- <p>L: <input class="input" type="text" name="Nazwisko" value="">
+            <p class="data-przyjecia ">
+                Data Przyjecia
+                <input class="input" type="text" id="data_przyjecia" value="">
+            </p>
+
+            <fieldset>
+                <legend>Dane personalne</legend>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                PESEL
+                            </td>
+                            <td>
+                                <input class="input" id="PESEL" type="text">
+                            </td>
+                            <td>
+                                Imie
+                        </trtd>
+                            <td>
+                                <input class="input" id="imie" type="text">
+                            </td>
+                            <td>
+                                Nazwisko
+                            </td>
+                            <td>
+                                <input class="input" type="text" name="data_przyjecia" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Miasto
+                            </td>
+                            <td>
+                                <input class="input" type="text" name="data_przyjecia" value="">
+                            </td>
+                            <td>
+                                Ulica
+                            </td>
+                            <td>
+                                <input class="input" type="text" name="data_przyjecia" value="">
+                            </td>
+                            <td>
+                                Kod pocztowy
+                            </td>
+                            <td>
+                                <input class="input" type="text" name="data_przyjecia" id="zip">
+                            </td>
+                            <td>
+                                Numer domu
+                            </td>
+                            <td>
+                                <input class="input" type="text" name="data_przyjecia">
+                            </td>
+                            <td>
+                                Numer mieszkania
+                            </td>
+                            <td>
+                                <input class="input" type="text" name="data_przyjecia" value="">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Szkła</legend>
+                <fieldset>
+                    <legend>Do bliży</legend>
+                    <table class="tabela-szkiel">
+                        <thead>
+                            <td>
+                                Sfera
+                            </td>
+                            <td>
+                                Cylinder
+                            </td>
+                            <td>
+                                Oś
+                            </td>
+                            <td>
+                                PD
+                            </td>
+                            <td colspan="2">
+                                Jakie rzeczywiście zrobiono
+                            </td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span style="color:white">L</span>
                                     <input class="input" type="text" name="Nazwisko" value="">
+                                </td>
+                                <td>
                                     <input class="input" type="text" name="Nazwisko" value="">
-                                    PD: <input class="input" type="text" name="Nazwisko" value="">
-                                    Jakie zrobiono : <input class="input" type="text" name="Nazwisko" value=""></p>
-                                <p>P: <input class="input" type="text" name="Nazwisko" value="">
+                                </td>
+                                <td>
                                     <input class="input" type="text" name="Nazwisko" value="">
+                                </td>
+                                <td>
+                                </td>
+                                <td>
                                     <input class="input" type="text" name="Nazwisko" value="">
-                                    PD: <input class="input" type="text" name="Nazwisko" value=""> 
-                                    Jakie zrobiono : <input class="input" type="text" name="Nazwisko" value="">
-                                </p></fieldset> -->
-                    </fieldset>
-                    
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-        </div>
-    </body>
+                                </td>
+                                <td>
+                                    <input class="input" type="text" name="Nazwisko" value="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span style="color:white">P</span>
+                                    <input class="input" type="text" name="Nazwisko" value="">
+                                </td>
+                                <td>
+                                    <input class="input" type="text" name="Nazwisko" value="">
+                                </td>
+                                <td>
+                                    <input class="input" type="text" name="Nazwisko" value="">
+                                </td>
+                                <td>
+                                    <input class="input" type="text" name="Nazwisko" value="">
+                                </td>
+                                <td>
+                                    <input class="input" type="text" name="Nazwisko" value="">
+                                </td>
+                                <td>
+                                    <input class="input" type="text" name="Nazwisko" value="">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend>Do czytania</legend>
+                    <table class="tabela-szkiel">
+                        <thead>
+                            <td>
+                                Sfera
+                            </td>
+                            <td>
+                                Cylinder
+                            </td>
+                            <td>
+                                Oś
+                            </td>
+                            <td>
+                                PD
+                            </td>
+                            <td colspan="2">
+                                Jakie rzeczywiście zrobiono
+                            </td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span style="color:white">L</span>
+                                    <input class="input" type="text" name="Nazwisko" value="">
+                                </td>
+                                <td>
+                                    <input class="input" type="text" name="Nazwisko" value="">
+                                </td>
+                                <td>
+                                    <input class="input" type="text" name="Nazwisko" value="">
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                    <input class="input" type="text" name="Nazwisko" value="">
+                                </td>
+                                <td>
+                                    <input class="input" type="text" name="Nazwisko" value="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span style="color:white">P</span>
+                                    <input class="input" type="text" name="Nazwisko" value="">
+                                </td>
+                                <td>
+                                    <input class="input" type="text" name="Nazwisko" value="">
+                                </td>
+                                <td>
+                                    <input class="input" type="text" name="Nazwisko" value="">
+                                </td>
+                                <td>
+                                    <input class="input" type="text" name="Nazwisko" value="">
+                                </td>
+                                <td>
+                                    <input class="input" type="text" name="Nazwisko" value="">
+                                </td>
+                                <td>
+                                    <input class="input" type="text" name="Nazwisko" value="">
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </fieldset>
+            </fieldset>
+
+            <fieldset>
+                <legend>Cena</legend>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Cena szkieł
+                            </td>
+                            <td>
+                                <input class="input" type="text" name="Nazwisko" value="">
+                            </td>
+                            <td>
+                                Refundacja
+                            </td>
+                            <td>
+                                <input class="input" type="text" name="Nazwisko" value="">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>Reszta</legend>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Data wydania
+                            </td>
+                            <td>
+                                <input class="input" type="text" name="Nazwisko" value="">
+                        </tr>
+                        <tr>
+                            </td>
+                            <td>
+                                Zakład
+                            </td>
+                            <td>
+                                <select>
+                                    <option>Piotr</option>
+                                    <option>Józef</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Numer Funduszu
+                            </td>
+                            <td>
+                                <input class="input" type="text" name="Nazwisko" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Data Funduszu
+                            </td>
+                            <td>
+                                <input class="input" type="text" name="Nazwisko" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Uwagi
+                            </td>
+                            <td>
+                                <input class="input" type="text" name="Nazwisko" value="">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+</body>
+<script src="../static/js/index.js"></script>
+
 </html>

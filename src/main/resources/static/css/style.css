@@ -1,35 +1,42 @@
-/* * {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: Verdana;
-  vertical-align: baseline;
-  box-sizing: border-box;
-} */
-* {
-  border-collapse: collapse;
+#main_div {
+  background-color: darkgray;
+  border: 1px solid black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 90%;
+  height: 90%;
+  margin: 50px auto;
+  color: white;
 }
 
-fieldset {
-  margin: 10px;
+#formularz {
+  margin-top: 15px;
 }
 
 table {
-  padding: auto;
-  width: 100%;
-    border-collapse: collapse;
-    border: 1px solid black;
+  border: 1px solid white;
+  background-color: #555;
 }
 
-table thead td {
+.data-przyjecia {
+  padding: 10px;
+  background-color: #555;
+  text-align: center;
+}
+
+.tabela-szkiel {
+  padding: auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabela-szkiel thead td {
   color: white;
-  background-color: #4CAF50;
+  background-color: #555;
   text-align: center;
   border: 1px black;
 }
 
-table tbody td {
+.tabela-szkiel tbody td {
   background-color: white;
   border-collapse: collapse;
   text-align: center;
@@ -37,84 +44,27 @@ table tbody td {
   margin: 0px;
 }
 
-table tbody tr {
+.tabela-szkiel tbody tr {
   margin-top: 10px;
 }
 
-table tbody td, table thead td {
-  background-color: #4CAF50;
+.tabela-szkiel tbody td, #tabela-szkiel thead td {
+  background-color: #555;
   border: 1px solid white;
 }
 
-table {
-  padding: auto;
-  width: 100%;
-    border-collapse: collapse;
-    border: 1px solid black;
-}
-#formularz {
-  margin-top: 15px;
-}
-
-.input {
-  text-align: center;
-}
-
-td {
-  text-align: center;
-}
-
-#main_div {
-    font-family: "Times New Roman", Times, serif;
-    width: 1000px;
-    margin: 50px auto;
-}
-
-/* Style the navigation menu */
-nav {
-  width: 100%;
-  background-color: #555;
-  overflow: auto;
-}
-
-fieldset {  
-  display: block;
-  margin-left: 2px;
-  margin-right: 2px;
-  padding-top: 0.35em;
-  padding-bottom: 0.625em;
-  padding-left: 0.75em;
-  padding-right: 0.75em;
-  border: 2px groove (internal value);
-}
 legend {
   display: block;
   padding-left: 2px;
   padding-right: 2px;
   border: none;
 }
-/* Navigation links */
-nav a {
-  border: 3px solid black;
-  padding: 10px;
-  /* padding: 10px; */
-  float: left;
-  display: block;
-  /* display: inline-block; */
+
+.input {
+  text-align: center;
+}
+
+.wrong-input {
+  background-color: red;
   color: white;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-size: 17px;
-  width: 33.33%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
-  text-align: center; /* If you want the text to be centered */
-}
-
-/* Add a background color on mouse-over */
-nav a:hover {
-  background-color: #000;
-}
-
-/* Style the current/active link */
-nav a.active {
-  background-color: #4CAF50;
 }
