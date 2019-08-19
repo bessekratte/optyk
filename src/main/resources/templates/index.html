@@ -18,7 +18,7 @@
 
             <fieldset>
                 <legend>Dane personalne</legend>
-                <table>
+                <table id="table-dane-personalne">
                     <tbody>
                         <tr>
                             <td>
@@ -29,7 +29,7 @@
                             </td>
                             <td>
                                 Imie
-                        </trtd>
+                                </trtd>
                             <td>
                                 <input class="input" id="imie" type="text">
                             </td>
@@ -83,7 +83,7 @@
                     <legend>Do bliży</legend>
                     <table class="tabela-szkiel">
                         <thead>
-                            <td>
+                            <td colspan="2">
                                 Sfera
                             </td>
                             <td>
@@ -103,6 +103,8 @@
                             <tr>
                                 <td>
                                     <span style="color:white">L</span>
+                                </td>
+                                <td>
                                     <input class="input" type="text" name="Nazwisko" value="">
                                 </td>
                                 <td>
@@ -123,6 +125,8 @@
                             <tr>
                                 <td>
                                     <span style="color:white">P</span>
+                                </td>
+                                <td>
                                     <input class="input" type="text" name="Nazwisko" value="">
                                 </td>
                                 <td>
@@ -148,7 +152,7 @@
                     <legend>Do czytania</legend>
                     <table class="tabela-szkiel">
                         <thead>
-                            <td>
+                            <td colspan="2">
                                 Sfera
                             </td>
                             <td>
@@ -168,6 +172,8 @@
                             <tr>
                                 <td>
                                     <span style="color:white">L</span>
+                                </td>
+                                <td>
                                     <input class="input" type="text" name="Nazwisko" value="">
                                 </td>
                                 <td>
@@ -188,6 +194,8 @@
                             <tr>
                                 <td>
                                     <span style="color:white">P</span>
+                                </td>
+                                <td>
                                     <input class="input" type="text" name="Nazwisko" value="">
                                 </td>
                                 <td>
@@ -233,58 +241,108 @@
                     </tbody>
                 </table>
             </fieldset>
+                <fieldset class="half-size-fieldset">
+                    <legend>Reszta</legend>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Data wydania
+                                </td>
+                                <td>
+                                    <input class="input" type="text" name="Nazwisko" value="">
+                            </tr>
+                            <tr>
+                                </td>
+                                <td>
+                                    Zakład
+                                </td>
+                                <td>
+                                    <select>
+                                        <option>Piotr</option>
+                                        <option>Józef</option>
+                                    </select>
+                                </td>
+                            </tr>
 
-            <fieldset>
-                <legend>Reszta</legend>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>
-                                Data wydania
-                            </td>
-                            <td>
-                                <input class="input" type="text" name="Nazwisko" value="">
-                        </tr>
-                        <tr>
-                            </td>
-                            <td>
-                                Zakład
-                            </td>
-                            <td>
-                                <select>
-                                    <option>Piotr</option>
-                                    <option>Józef</option>
-                                </select>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                Numer Funduszu
-                            </td>
-                            <td>
-                                <input class="input" type="text" name="Nazwisko" value="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Data Funduszu
-                            </td>
-                            <td>
-                                <input class="input" type="text" name="Nazwisko" value="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Uwagi
-                            </td>
-                            <td>
-                                <input class="input" type="text" name="Nazwisko" value="">
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </fieldset>
+                            <tr>
+                                <td>
+                                    Numer Funduszu
+                                </td>
+                                <td>
+                                    <input class="input" type="text" name="Nazwisko" value="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Data Funduszu
+                                </td>
+                                <td>
+                                    <input class="input" type="text" name="Nazwisko" value="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Uwagi
+                                </td>
+                                <td>
+                                    <input class="input" type="text" name="Nazwisko" value="">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+                <fieldset >
+                        <legend>Reszta</legend>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Data wydania
+                                    </td>
+                                    <td>
+                                        <input class="input" type="text" name="Nazwisko" value="">
+                                </tr>
+                                <tr>
+                                    </td>
+                                    <td>
+                                        Zakład
+                                    </td>
+                                    <td>
+                                        <select>
+                                            <option>Piotr</option>
+                                            <option>Józef</option>
+                                        </select>
+                                    </td>
+                                </tr>
+    
+                                <tr>
+                                    <td>
+                                        Numer Funduszu
+                                    </td>
+                                    <td>
+                                        <input class="input" type="text" name="Nazwisko" value="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Data Funduszu
+                                    </td>
+                                    <td>
+                                        <input class="input" type="text" name="Nazwisko" value="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Uwagi
+                                    </td>
+                                    <td>
+                                        <input class="input" type="text" name="Nazwisko" value="">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </fieldset>
         </form>
     </div>
 </body>
