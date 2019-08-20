@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../static/css/style.css">
+    <script type="text/javascript" src="../static/js/jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
@@ -29,7 +30,7 @@
                             </td>
                             <td>
                                 Imie
-                                </trtd>
+                            </td>
                             <td>
                                 <input class="input" id="imie" type="text">
                             </td>
@@ -57,7 +58,8 @@
                                 Kod pocztowy
                             </td>
                             <td>
-                                <input class="input" type="text" name="data_przyjecia" id="zip">
+                                <input class="input" type="text" name="data_przyjecia" onfocus="removeSelection()"
+                                    id="zip">
                             </td>
                             <td>
                                 Numer domu
@@ -241,111 +243,105 @@
                     </tbody>
                 </table>
             </fieldset>
-                <fieldset class="half-size-fieldset">
-                    <legend>Reszta</legend>
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    Data wydania
-                                </td>
-                                <td>
-                                    <input class="input" type="text" name="Nazwisko" value="">
-                            </tr>
-                            <tr>
-                                </td>
-                                <td>
-                                    Zakład
-                                </td>
-                                <td>
-                                    <select>
-                                        <option>Piotr</option>
-                                        <option>Józef</option>
-                                    </select>
-                                </td>
-                            </tr>
+            <fieldset class="half-size-fieldset">
+                <legend>Reszta</legend>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Data wydania
+                            </td>
+                            <td>
+                                <input class="input" type="text" name="Nazwisko" value="">
+                        </tr>
+                        <tr>
+                            </td>
+                            <td>
+                                Zakład
+                            </td>
+                            <td>
+                                <select>
+                                    <option>Piotr</option>
+                                    <option>Józef</option>
+                                </select>
+                            </td>
+                        </tr>
 
-                            <tr>
-                                <td>
-                                    Numer Funduszu
-                                </td>
-                                <td>
-                                    <input class="input" type="text" name="Nazwisko" value="">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Data Funduszu
-                                </td>
-                                <td>
-                                    <input class="input" type="text" name="Nazwisko" value="">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Uwagi
-                                </td>
-                                <td>
-                                    <input class="input" type="text" name="Nazwisko" value="">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </fieldset>
-                <fieldset >
-                        <legend>Reszta</legend>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        Data wydania
-                                    </td>
-                                    <td>
-                                        <input class="input" type="text" name="Nazwisko" value="">
-                                </tr>
-                                <tr>
-                                    </td>
-                                    <td>
-                                        Zakład
-                                    </td>
-                                    <td>
-                                        <select>
-                                            <option>Piotr</option>
-                                            <option>Józef</option>
-                                        </select>
-                                    </td>
-                                </tr>
-    
-                                <tr>
-                                    <td>
-                                        Numer Funduszu
-                                    </td>
-                                    <td>
-                                        <input class="input" type="text" name="Nazwisko" value="">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Data Funduszu
-                                    </td>
-                                    <td>
-                                        <input class="input" type="text" name="Nazwisko" value="">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Uwagi
-                                    </td>
-                                    <td>
-                                        <input class="input" type="text" name="Nazwisko" value="">
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </fieldset>
+                        <tr>
+                            <td>
+                                Numer Funduszu
+                            </td>
+                            <td>
+                                <input class="input" type="text" name="Nazwisko" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Data Funduszu
+                            </td>
+                            <td>
+                                <input class="input" type="text" name="Nazwisko" value="">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            <fieldset style="text-align: right">
+                <legend>Kody</legend>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Lewa Bliż
+                            </td>
+                            <td>
+                                <select id="lewa-bliz-select">
+                                    <option>71.00</option>
+                                    <option>73.00</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Prawa Bliż
+                            </td>
+                            <td>
+                                <select id="lewa-bliz-select">
+                                    <option>71.00</option>
+                                    <option>73.00</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Lewa Dal
+                            </td>
+                            <td>
+                                <select id="lewa-bliz-select">
+                                    <option>71.00</option>
+                                    <option>73.00</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Prawa Dal
+                            </td>
+                            <td>
+                                <select id="lewa-bliz-select">
+                                    <option>71.00</option>
+                                    <option>73.00</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            <p class="last-paragraph"> Uwagi <input class="input wide-input" type="text" name="Nazwisko" value=""> </p>
         </form>
     </div>
 </body>
-<script src="../static/js/index.js"></script>
+<script src="../static/js/index.js">
+</script>
 
 </html>

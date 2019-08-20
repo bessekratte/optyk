@@ -4,11 +4,11 @@ html {
 
 #main_div {
   background-color: darkgray;
-  border: 1px solid black;
+  border: 1px solid white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 90%;
-  height: 90%;
-  margin: 50px auto;
+  height: 100%;
+  margin: auto;
   color: white;
 }
 
@@ -76,10 +76,10 @@ legend {
 }
 
 .half-size-fieldset {
-  width: 50%;
-  display: inline-block;
+  background-color: darkgray;
   box-sizing: border-box;
   float: left;
+  width: 50%;
 }
 
 .input {
@@ -88,5 +88,14 @@ legend {
 
 .wrong-input {
   background-color: red;
-  color: white;
+}
+
+.last-paragraph {
+  padding: 10px;
+  background-color: #555;
+  text-align: center;
+}
+
+.wide-input {
+  width: 90%;
 }
