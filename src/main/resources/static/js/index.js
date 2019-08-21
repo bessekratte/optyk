@@ -3,13 +3,13 @@ let zipCode = document.getElementById("zip");
 
 pesel.addEventListener("focusout", validatePESEL);
 pesel.addEventListener("focusin", test);
-// zipCode.addEventListener("onfocus", test);
 
-function removeSelection() {
-}
+let date = new Date();
+let dateString = date.getFullYear().toString() + "-" + date.getMonth().toString() + "-" +  date.getDay().toString(); 
+console.info(dateString);
 
 function test() {
-    pesel.getS
+    this.selectionStart = this.selectionEnd = this.value.length;
 }
 
 function validatePESEL() {
