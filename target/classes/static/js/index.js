@@ -18,7 +18,7 @@ function test() {
 }
 
 function validateNumerRefundacji() {
-    var regex = new RegExp("2\-10\-[0-9]{2}\-00[0-9]{5}\-[0-9]");
+    var regex = new RegExp("2\-10\-19\-00[0-9]{5}\-[0-9]");
     console.log(this.value);
     console.log(regex.test(this.value));
 }
