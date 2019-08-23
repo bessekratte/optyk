@@ -1,5 +1,3 @@
-alert("asd");
-
 let pesel = document.getElementById("PESEL");
 let zipCode = document.getElementById("zip");
 let numberRefundacji = document.getElementById("numer-refundacji");
@@ -8,10 +6,6 @@ let numberRefundacji = document.getElementById("numer-refundacji");
 pesel.addEventListener("focusout", validatePESEL);
 pesel.addEventListener("focusin", test);
 numberRefundacji.addEventListener("focusout", validateNumerRefundacji);
-
-// let date = new Date();
-// let dateString = date.getFullYear().toString() + "-" + date.getMonth().toString() + "-" +  date.getDay().toString(); 
-// console.info(dateString);
 
 function test() {
     this.selectionStart = this.selectionEnd = this.value.length;

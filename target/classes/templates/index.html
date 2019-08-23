@@ -13,7 +13,7 @@
 
             <p class="data-przyjecia ">
                 Data Przyjecia
-                <input class="input" type="text" id="data_przyjecia" value="">
+                <input class="input" type="text" id="data-przyjecia" value="">
             </p>
 
             <fieldset>
@@ -248,10 +248,10 @@
                     <tbody>
                         <tr>
                             <td>
-                                Data wydania
+                                Termin wykonania
                             </td>
                             <td>
-                                <input class="input" type="text" name="Nazwisko" value="">
+                                <input class="input" type="text" name="Nazwisko" id="termin-wykonania">
                         </tr>
                         <tr>
                             </td>
@@ -268,7 +268,7 @@
 
                         <tr>
                             <td>
-                                Numer Funduszu
+                                Numer zlecenia
                             </td>
                             <td>
                                 <input class="input" type="text" name="Nazwisko" id="numer-refundacji">
@@ -276,10 +276,10 @@
                         </tr>
                         <tr>
                             <td>
-                                Data Funduszu
+                                Data wystawienia zlecenia
                             </td>
                             <td>
-                                <input class="input" type="text" name="Nazwisko" value="">
+                                <input class="input" type="text" name="Nazwisko" id="data-wystawienia-zlecenia">
                             </td>
                         </tr>
                     </tbody>
@@ -361,5 +361,7 @@
     </div>
 </body>
 <script th:src="@{/js/jquery-3.4.1.min.js}" type="text/javascript" src="../static/js/jquery-3.4.1.min.js"></script>
+<script th:src="@{/js/moment.js}" type="text/javascript" src="../static/js/moment.js"></script>
 <script th:src="@{/js/index.js}" type="text/javascript" src="../static/js/index.js"></script>
+<script th:src="@{/js/dates.js}" type="text/javascript" src="../static/js/dates.js"></script>
 </html>
