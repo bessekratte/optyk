@@ -4,8 +4,13 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'mvn spring-boot:run' 
+            }
+        }
+        stage('Staging') {
+            sh "pid=\$(lsof -i:8080 -t); kill -TERM \$pid || kill -KILL \$pid"
+            withEnv(['JENKINS_NODE_COOKIE=dontkill']) {
+                sh 'mvn spring-boot:run -Dserver.port=8080 &'
             }
         }
     }
-}    
+}
